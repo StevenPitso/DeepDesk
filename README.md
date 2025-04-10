@@ -74,7 +74,7 @@
     python -m venv venv
     .\venv\Scripts\activate  # On Windows
     pip install -r requirements.txt
-```
+
 ### 2.Set up Node.js enviroment (b)
 
 - Go to the [Node.js download page](https://nodejs.org/) and install the latest stable version.
