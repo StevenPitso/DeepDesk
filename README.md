@@ -58,13 +58,12 @@
     ├── sorter.js             # Node.js script to sort files by prediction
     ├── README.md             # You're reading it! 
 ```
-
 ---
 ### Setup Instructions
 
 #### 1.Clone the reposity
   ```bash
-  git clone https://github.com/yourusername/smart-sort-ai.git
+  git clone https://github.com/StevenPitso/DeepDesk.git
   cd 
   ```
 #### 2.Set up Python enviroment
@@ -81,7 +80,7 @@
 ```
 #### 4.Sort the files
   ```bash
-    node sorter.js
+    node ai_sorter.js
 ```
 ---
 
