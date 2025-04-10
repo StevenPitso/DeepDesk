@@ -44,19 +44,19 @@
 ---
 ### 📂 Folder Structure 
   ```bash
-    DEEPDESK/
-    ├── data/                 # Training data (organized by category)
-    │   ├── Finance/
-    │   ├── Health/
-    │   └── School/
-    ├── model/                # Saved ML model and label metadata
-    │   ├── text_model.pkl
-    │   └── labels.json
-    ├── testDir/              # Unsorted .txt files for prediction
-    ├── train_model.py        # Trains and saves the model
-    ├── predict.py            # Loads model and predicts text categories
-    ├── sorter.js             # Node.js script to sort files by prediction
-    ├── README.md             # You're reading it! 
+            DEEPDESK/
+            ├── data/                 # Training data (organized by category)
+            │   ├── Finance/
+            │   ├── Health/
+            │   └── School/
+            ├── model/                # Saved ML model and label metadata
+            │   ├── text_model.pkl
+            │   └── labels.json
+            ├── testDir/              # Unsorted .txt files for prediction
+            ├── train_model.py        # Trains and saves the model
+            ├── predict.py            # Loads model and predicts text categories
+            ├── sorter.js             # Node.js script to sort files by prediction
+            ├── README.md             # You're reading it! 
 
 ---
 ### Setup Instructions
