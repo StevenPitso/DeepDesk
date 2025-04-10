@@ -21,9 +21,10 @@ X, y = loadData("data")
 
 # Creating  our model now 
 
-model = Pipeline([('tfidf', TfidfVectorizer(stop_words='english'),
-                   ('clf', MultinomialNB())
-                )])
+model = Pipeline([
+    ('tfidf', TfidfVectorizer(stop_words='english')),
+    ('clf', MultinomialNB())
+])
 
 model.fit(X, y)
 

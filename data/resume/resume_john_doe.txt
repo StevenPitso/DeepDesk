@@ -1,0 +1,6 @@
+John Doe
+Senior Software Engineer
+Email: john.doe@example.com
+Skills: JavaScript, Python, SQL, Machine Learning
+Education: BSc Computer Science
+Experience: 5 years at TechCorp
