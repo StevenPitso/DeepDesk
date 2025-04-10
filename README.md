@@ -40,8 +40,8 @@
   node ai_sorter.js
   ```
 5. Files are Sorted into Folders liike `Finance/`, `School/` , `UJ/` etc, based on prediction content.
-
 ---
+
 ### 📂 Folder Structure 
     ```bash
     DEEPDESK/
@@ -62,12 +62,12 @@
 ---
 ### Setup Instructions
 
-1.Clone the reposity
+#### 1.Clone the reposity
   ```bash
   git clone https://github.com/yourusername/smart-sort-ai.git
   cd 
   ```
-2.Set up Python enviroment
+#### 2.Set up Python enviroment
 
   ```bash
     python -m venv venv
@@ -75,11 +75,11 @@
     pip install -r requirements.txt
 ```
 
-3.Train the Model
+#### 3.Train the Model
   ``` bash
      python train_model.py
 ```
-4.Sort the files
+#### 4.Sort the files
   ```bash
     node sorter.js
 ```
