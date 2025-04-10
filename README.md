@@ -65,14 +65,19 @@
   git clone https://github.com/StevenPitso/DeepDesk.git
   cd DeepDesk
  ```
-#### 2.Set up Python enviroment
+#### 2.Set up Python enviroment (a)
 
   ```bash
     python -m venv venv
     .\venv\Scripts\activate  # On Windows
     pip install -r requirements.txt
 ```
+### 2.Set up Node.js enviroment (b)
 
+- Go to the [Node.js download page](https://nodejs.org/) and install the latest stable version.
+- After installing, verify the installation by running:
+  ```bash
+  node -v  // validate
 #### 3.Train the Model
   ``` bash
      python train_model.py
