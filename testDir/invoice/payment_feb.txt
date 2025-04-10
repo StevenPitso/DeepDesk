@@ -1,0 +1,5 @@
+Receipt
+Payment Date: Feb 5, 2025
+Reference: 883728
+Amount Paid: $500.00
+Method: Credit Card

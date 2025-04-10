@@ -45,7 +45,7 @@ function sortFiles(folderPath){
     
     fs.renameSync(fullPath, path.join(targetDir, file));
 
-    console.log(`\u{1F9E0} Moved : ${file}  \u279C  ${predicted}/`);
+    console.log(`\u{1F9E0} Moved : ${file}  \u279C  ${predicted} \u{1F4C1} /`);
    }
 
 

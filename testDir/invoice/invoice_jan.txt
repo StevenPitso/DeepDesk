@@ -1,0 +1,7 @@
+Invoice #: 202501
+Client: Acme Inc.
+Date: January 10, 2025
+Items:
+ - Web Design: $1,200
+ - Hosting: $100
+Total: $1,300

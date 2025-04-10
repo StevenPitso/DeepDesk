@@ -38,4 +38,4 @@ joblib.dump(model, "model/text_model.pkl")
 with open("model/labels.json", "w") as f:
     json.dump(list(set(y)),f)
 
-print(" [ > ]Model trained and saved.")
+print(" \u279C  Model trained and saved \U0001F680 .")

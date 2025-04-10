@@ -1,0 +1,3 @@
+Idea: Create a mobile app that lets users trade energy like stocks.
+Users can sell surplus solar power to others in real-time.
+Needs blockchain or smart contract integration.
