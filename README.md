@@ -116,7 +116,7 @@
 ---
 
 ### License
-**MIT License** – Free for personal and commercial use.
+MIT License – Free for personal and commercial use.
 ---
 ### Acknowlegdments
 
