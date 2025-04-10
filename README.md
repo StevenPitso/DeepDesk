@@ -43,21 +43,21 @@
 
 ---
 ### 📂 Folder Structure 
-  ```bash
-  DEEPDESK/
-  ├── data/                 # Training data (organized by category)
-  │   ├── Finance/
-  │   ├── Health/
-  │   └── School/
-  ├── model/                # Saved ML model and label metadata
-  │   ├── text_model.pkl
-  │   └── labels.json
-  ├── testDir/              # Unsorted .txt files for prediction
-  ├── train_model.py        # Trains and saves the model
-  ├── predict.py            # Loads model and predicts text categories
-  ├── sorter.js             # Node.js script to sort files by prediction
-  ├── README.md             # You're reading it! 
-
+    ```bash
+    DEEPDESK/
+    ├── data/                 # Training data (organized by category)
+    │   ├── Finance/
+    │   ├── Health/
+    │   └── School/
+    ├── model/                # Saved ML model and label metadata
+    │   ├── text_model.pkl
+    │   └── labels.json
+    ├── testDir/              # Unsorted .txt files for prediction
+    ├── train_model.py        # Trains and saves the model
+    ├── predict.py            # Loads model and predicts text categories
+    ├── sorter.js             # Node.js script to sort files by prediction
+    ├── README.md             # You're reading it! 
+```
 ---
 ### Setup Instructions
 
@@ -65,51 +65,60 @@
   ```bash
     git clone https://github.com/yourusername/smart-sort-ai.git
     cd 
-
+  ```
 2. Set up Python enviroment
 
   ```bash
     python -m venv venv
     venv\Scripts\activate  # On Windows
     pip install -r requirements.txt
-
+  ```
 
 3. Train the Model
   ```bash
      python train_model.py
-
+  ```
 4.Sort the files
   ```bash
     node sorter.js
-
+  ```
 ---
 
 
 ### 📚 Learning Goals
 
-✅ Train a basic text classification model
+- ✅ Train a basic text classification model
 
-✅ Use AI to automate desktop tasks
+- ✅ Use AI to automate desktop tasks
 
-✅ Connect Python and JavaScript using child_process
+- ✅  Format and Write a README.md file.
 
-✅ Handle files dynamically and sort them with logic
+- ✅ Connect Python and JavaScript using child_process
+
+- ✅ Handle files dynamically and sort them with logic
 
 ---
 ### Future Improvements
 
-🖼 Support for image classification
+- 🖼 Support for image classification
 
-🖥 Desktop GUI with Electron
+- 🖥 Desktop GUI with Electron
 
-⏪ File undo/rollback feature
+- ⏪ File undo/rollback feature
 
 ---
 
 ### License
 
-
+---
 ### Acknowlegdments
 
-Huge shoutout to open-source tools like Scikit-learn and Node.js for making this kind of project so accessible
+Huge shoutout to open-source tools like **Scikit-learn** ((https://scikit-learn.org/)) and **Node.js** (https://nodejs.org/) for making this kind of project so accessible to beginners like me.
+
+#### tools used:
+
+- Chatgpt & deepseek
+- Nodepad++
+- VsCode
+
 
