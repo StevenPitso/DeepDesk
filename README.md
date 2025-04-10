@@ -41,8 +41,8 @@
 
 5. Files are Sorted into Folders liike `Finance/`, `School/` , `UJ/` etc, based on prediction content.
 
-
-### Folder Structure 
+---
+### 📂 Folder Structure 
   ```bash
     DEEPDESK/
     ├── data/                 # Training data (organized by category)
@@ -58,5 +58,58 @@
     ├── sorter.js             # Node.js script to sort files by prediction
     ├── README.md             # You're reading it! 
 
+---
+### Setup Instructions
 
+1. Clone the reposity
+  ```bash
+    git clone https://github.com/yourusername/smart-sort-ai.git
+    cd 
+
+2. Set up Python enviroment
+
+  ```bash
+    python -m venv venv
+    venv\Scripts\activate  # On Windows
+    pip install -r requirements.txt
+
+
+3. Train the Model
+  ```bash
+     python train_model.py
+
+4.Sort the files
+  ```bash
+    node sorter.js
+
+---
+
+
+### 📚 Learning Goals
+
+✅ Train a basic text classification model
+
+✅ Use AI to automate desktop tasks
+
+✅ Connect Python and JavaScript using child_process
+
+✅ Handle files dynamically and sort them with logic
+
+---
+### Future Improvements
+
+🖼 Support for image classification
+
+🖥 Desktop GUI with Electron
+
+⏪ File undo/rollback feature
+
+---
+
+### License
+
+
+### Acknowlegdments
+
+Huge shoutout to open-source tools like Scikit-learn and Node.js for making this kind of project so accessible.
 
