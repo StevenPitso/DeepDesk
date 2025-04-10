@@ -66,6 +66,9 @@
   cd DeepDesk
  ```
 #### 2.Set up Python enviroment (a)
+- Download and install Python from the [official Python website](https://www.python.org/downloads/).
+- Verify installation by running:
+
 
   ```bash
     python -m venv venv
