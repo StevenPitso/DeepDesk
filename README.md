@@ -57,7 +57,7 @@
             ├── predict.py            # Loads model and predicts text categories
             ├── sorter.js             # Node.js script to sort files by prediction
             ├── README.md             # You're reading it! 
-
+  ```bash
 ---
 ### Setup Instructions
 
