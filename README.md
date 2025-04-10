@@ -1,12 +1,8 @@
-Here's your beautifully formatted `README.md` file, fully cleaned up, consistent in style, and ready for GitHub or any markdown viewer:
+# DeepDesk
 
----
+# 🧠DeepDesk AI
 
-```markdown
-# 🧠 DeepDesk AI
-
-**DeepDesk AI** is a desktop tool that automatically organizes `.txt` files into folders based on their **content** using a lightweight AI-powered classifier.  
-It's my **first deep learning project**, and it brings a touch of automation magic to messy file systems!
+**DeepDesk AI** is a desktop tool that automatically organizes `.txt` files into folders based on their **content** using a lightweight AI-powered classifier. It's my first deep learning project, and it brings a touch of automation magic to messy file systems!
 
 ---
 
@@ -15,7 +11,7 @@ It's my **first deep learning project**, and it brings a touch of automation mag
 - 🔍 Scans a folder for `.txt` files
 - 🧠 Predicts the category of each file using a trained model
 - 📁 Automatically creates and sorts files into folders
-- ⚙️ Lightweight CLI-based workflow using **Python + JavaScript**
+- ⚙️ Lightweight CLI-based workflow using Python + JavaScript
 
 ---
 
@@ -30,117 +26,90 @@ It's my **first deep learning project**, and it brings a touch of automation mag
 
 ## 🧪 How It Works
 
-1. Add training data inside the `data/` folder.  
-   Each subfolder name becomes a category (e.g., `Finance/`, `School/`, `Health/`), and should contain relevant `.txt` files.
-
+1. Add training data inside the `data/` folder. Each subfolder name is a category (e.g., `Finance/`, `School/`, `Health/`), and should contain relevant `.txt` files.
 2. Run the training script:
-
    ```bash
    python train_model.py
-   ```
+
+## 🧪 Testing 
+
+3. Drop random `.txt` files into `testDir\`
+
+4.  Sort them with:
+    ```bash
+    node ai_sorter.js
+
+5. Files are Sorted into Folders liike `Finance/`, `School/` , `UJ/` etc, based on prediction content.
+
+---
+### 📂 Folder Structure 
+  ```bash
+    DEEPDESK/
+    ├── data/                 # Training data (organized by category)
+    │   ├── Finance/
+    │   ├── Health/
+    │   └── School/
+    ├── model/                # Saved ML model and label metadata
+    │   ├── text_model.pkl
+    │   └── labels.json
+    ├── testDir/              # Unsorted .txt files for prediction
+    ├── train_model.py        # Trains and saves the model
+    ├── predict.py            # Loads model and predicts text categories
+    ├── sorter.js             # Node.js script to sort files by prediction
+    ├── README.md             # You're reading it! 
+
+---
+### Setup Instructions
+
+1. Clone the reposity
+  ```bash
+    git clone https://github.com/yourusername/smart-sort-ai.git
+    cd 
+
+2. Set up Python enviroment
+
+  ```bash
+    python -m venv venv
+    venv\Scripts\activate  # On Windows
+    pip install -r requirements.txt
+
+
+3. Train the Model
+  ```bash
+     python train_model.py
+
+4.Sort the files
+  ```bash
+    node sorter.js
 
 ---
 
-## 🧪 Testing
 
-3. Drop random `.txt` files into `testDir\`.
+### 📚 Learning Goals
 
-4. Sort them with:
+✅ Train a basic text classification model
 
-   ```bash
-   node sorter.js
-   ```
+✅ Use AI to automate desktop tasks
 
-5. Files are automatically sorted into folders like `Finance/`, `School/`, `UJ/`, etc., based on their content.
+✅ Connect Python and JavaScript using child_process
+
+✅ Handle files dynamically and sort them with logic
+
+---
+### Future Improvements
+
+🖼 Support for image classification
+
+🖥 Desktop GUI with Electron
+
+⏪ File undo/rollback feature
 
 ---
 
-## 📂 Folder Structure
+### License
 
-```plaintext
-DEEPDESK/
-├── data/                 # Training data (organized by category)
-│   ├── Finance/
-│   ├── Health/
-│   └── School/
-├── model/                # Saved ML model and label metadata
-│   ├── text_model.pkl
-│   └── labels.json
-├── testDir/              # Unsorted .txt files for prediction
-├── train_model.py        # Trains and saves the model
-├── predict.py            # Loads model and predicts text categories
-├── sorter.js             # Node.js script to sort files by prediction
-├── README.md             # You're reading it!
-```
 
----
+### Acknowlegdments
 
-## 🧰 Setup Instructions
+Huge shoutout to open-source tools like Scikit-learn and Node.js for making this kind of project so accessible
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/smart-sort-ai.git
-cd smart-sort-ai
-```
-
-### 2. Set Up Python Environment
-
-```bash
-python -m venv venv
-venv\Scripts\activate  # On Windows
-pip install -r requirements.txt
-```
-
-> If `requirements.txt` doesn’t exist yet, install these manually:
-> ```bash
-> pip install scikit-learn joblib
-> ```
-
-### 3. Train the Model
-
-```bash
-python train_model.py
-```
-
-### 4. Sort Files
-
-```bash
-node sorter.js
-```
-
----
-
-## 📚 Learning Goals
-
-- ✅ Train a basic text classification model  
-- ✅ Use AI to automate desktop tasks  
-- ✅ Connect Python and JavaScript using `child_process`  
-- ✅ Handle files dynamically and sort them with logic  
-
----
-
-## 🌟 Future Improvements
-
-- 🖼 Support for image classification  
-- 🧠 Upgrade to deep learning models (e.g., BERT)  
-- 🖥 Desktop GUI with Electron  
-- ⏪ File undo/rollback feature  
-
----
-
-## 📜 License
-
-MIT License – Free for personal and commercial use.
-
----
-
-## 🤝 Acknowledgments
-
-Huge shoutout to open-source tools like [Scikit-learn](https://scikit-learn.org/) and [Node.js](https://nodejs.org/)  
-for making this kind of project so accessible to beginners like me.
-```
-
----
-
-Let me know if you want to include badges, GitHub actions, or turn this into a documentation site later!
