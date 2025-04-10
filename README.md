@@ -1,5 +1,5 @@
 # DeepDesk
- DeepLearning File sorter 
+
 # 🧠DeepDesk AI
 
 **DeepDesk AI** is a desktop tool that automatically organizes `.txt` files into folders based on their **content** using a lightweight AI-powered classifier. It's my first deep learning project, and it brings a touch of automation magic to messy file systems!
@@ -30,3 +30,33 @@
 2. Run the training script:
    ```bash
    python train_model.py
+
+## 🧪 Testing 
+
+3. Drop random `.txt` files into `testDir\`
+
+4.  Sort them with:
+    ```bash
+    node ai_sorter.js
+
+5. Files are Sorted into Folders liike `Finance/`, `School/` , `UJ/` etc, based on prediction content.
+
+
+### Folder Structure 
+  ```bash
+    DEEPDESK/
+    ├── data/                 # Training data (organized by category)
+    │   ├── Finance/
+    │   ├── Health/
+    │   └── School/
+    ├── model/                # Saved ML model and label metadata
+    │   ├── text_model.pkl
+    │   └── labels.json
+    ├── testDir/              # Unsorted .txt files for prediction
+    ├── train_model.py        # Trains and saves the model
+    ├── predict.py            # Loads model and predicts text categories
+    ├── sorter.js             # Node.js script to sort files by prediction
+    ├── README.md             # You're reading it! 
+
+
+
