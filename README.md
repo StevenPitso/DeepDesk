@@ -30,7 +30,7 @@
 2. Run the training script:
    ```bash
    python train_model.py
-  ```
+
 ## 🧪 Testing 
 
 3. Drop random `.txt` files into `testDir\`
@@ -38,12 +38,12 @@
 4.  Sort them with:
   ```bash
   node ai_sorter.js
-  ```
+ ```
 5. Files are Sorted into Folders liike `Finance/`, `School/` , `UJ/` etc, based on prediction content.
 ---
 
 ### 📂 Folder Structure 
-    ```bash
+  
     DEEPDESK/
     ├── data/                 # Training data (organized by category)
     │   ├── Finance/
@@ -57,15 +57,14 @@
     ├── predict.py            # Loads model and predicts text categories
     ├── sorter.js             # Node.js script to sort files by prediction
     ├── README.md             # You're reading it! 
-```
----
+
 ### Setup Instructions
 
 #### 1.Clone the reposity
-  ```bash
+ ```bash
   git clone https://github.com/StevenPitso/DeepDesk.git
-  cd 
-  ```
+  cd DeepDesk
+ ```
 #### 2.Set up Python enviroment
 
   ```bash
@@ -109,7 +108,7 @@
 ---
 
 ### License
-
+**MIT License** – Free for personal and commercial use.
 ---
 ### Acknowlegdments
 
