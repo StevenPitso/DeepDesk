@@ -22,21 +22,28 @@ function predictCategory(text){
 
 function sortFiles(folderPath){
    /// folders  creation  and placement of files .....
-
-   const fullPath = path.join(folderPath, file);
-
-   if(fs.lstatSync(fullPath).isFile()) continue;
-   if(!file.endsWith(".txt")) continue;
+   const files = fs.readdirSync(folderPath);
 
 
-   const content = fs.readFileSync(fullPath, utf-8);
-   const predicted = predictCategory(content);
+
+   for(const file of files){
+
+    const fullPath = path.join(folderPath, file);
+
+    if(!fs.lstatSync(fullPath).isFile()) continue;
+    if(!file.endsWith(".txt")) continue;
 
 
-   const targetDir = path.join(folderPath, predicted);
-   if(fs.existsSync(targetDir)) fs.mkdirSync(targetDir);
-   
-   fs.renameSync(fullPath, path.join(targetDir, file));
-   
+    const content = fs.readFileSync(fullPath, utf-8);
+    const predicted = predictCategory(content);
+
+
+    const targetDir = path.join(folderPath, predicted);
+    if(fs.existsSync(targetDir)) fs.mkdirSync(targetDir);
+    
+    fs.renameSync(fullPath, path.join(targetDir, file));
+   }
+
+
 
 }
