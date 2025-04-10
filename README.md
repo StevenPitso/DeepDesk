@@ -30,15 +30,15 @@
 2. Run the training script:
    ```bash
    python train_model.py
-
+  ```
 ## 🧪 Testing 
 
 3. Drop random `.txt` files into `testDir\`
 
 4.  Sort them with:
-    ```bash
-    node ai_sorter.js
-
+  ```bash
+  node ai_sorter.js
+  ```
 5. Files are Sorted into Folders liike `Finance/`, `School/` , `UJ/` etc, based on prediction content.
 
 ---
@@ -58,30 +58,31 @@
     ├── sorter.js             # Node.js script to sort files by prediction
     ├── README.md             # You're reading it! 
 ```
+
 ---
 ### Setup Instructions
 
-1. Clone the reposity
+1.Clone the reposity
   ```bash
-    git clone https://github.com/yourusername/smart-sort-ai.git
-    cd 
+  git clone https://github.com/yourusername/smart-sort-ai.git
+  cd 
   ```
-2. Set up Python enviroment
+2.Set up Python enviroment
 
   ```bash
     python -m venv venv
-    venv\Scripts\activate  # On Windows
+    .\venv\Scripts\activate  # On Windows
     pip install -r requirements.txt
-  ```
+```
 
-3. Train the Model
-  ```bash
+3.Train the Model
+  ``` bash
      python train_model.py
-  ```
+```
 4.Sort the files
   ```bash
     node sorter.js
-  ```
+```
 ---
 
 
@@ -117,8 +118,8 @@ Huge shoutout to open-source tools like **Scikit-learn** ((https://scikit-learn.
 
 #### tools used:
 
-- Chatgpt & deepseek
-- Nodepad++
-- VsCode
+- Chatgpt & deepseek (learning and research)
+- Nodepad++ (basic scripting and planning)
+- VsCode (development and deployment to github)
 
 
